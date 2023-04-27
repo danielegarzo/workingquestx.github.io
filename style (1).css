@@ -1,0 +1,144 @@
+:root{
+    --primary800: #000000;
+    --primary500: #000000;
+    --primary400: #F7E733;
+    --primary100: #5CF64A;
+    --gray100: #f7f7fc;
+}
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family:'Zen Kurenaido',sans-serif;
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+
+h1{
+    font-size: 6rem;
+    line-height: 104px;
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 56px;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+h4 {
+    font-size: 1.25rem;
+    line-height: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { 
+    color: var(--primary500); 
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary500);
+}
+
+.logo {
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+nav.logo{
+    font-weight: bold;
+    color: var(--primary500);
+}
+
+nav.menu{
+    display: flex;
+     width: 40%;
+     justify-content: space-between;
+     flex-direction: row;
+}
+
+nav{
+    display: flex;
+    height: 80%;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.active{
+    font-weight: bold;
+    /*color: red;*/
+}
+
+ .safe.area{
+     max-width: 1200px;
+     width:90 vw;
+     margin-inline:auto;
+     min-height: 100vh;
+ }
+
+.spaced-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content > :not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.main-image{
+    width: 70%;
+    height: 800px;
+    object-fit: cover;
+    /* object-position: center; */
+    display: block;
+}
+
+.footer{
+   padding-top: 5rem;
+   padding-bottom: 32em;
+   color: var(--primary500);
+   position: relative;
+}
+
+.footer::after{
+     content:"";
+     position: absolute;
+     width: 100px;
+     height: 1px;
+     top: 14%;
+     background-color: var(--primary500);
+}
+
+.google-maps{
+    position: relative;
+    padding-bottom:75%;
+    height: 0%;
+    overflow:hidden;
+}
+   .google-maps > iframe{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100% !important;
+       height: 100% !important;
+   }

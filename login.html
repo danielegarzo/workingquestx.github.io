@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form method="post" action="/php/login.php">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Username" name="username">
+            <input type="password" id="pwd" placeholder="Password" name="password">
+<input type="button" onclick="showPwd()" value="Mostra/nascondi password">
+
+            <script>
+                function showPwd() {
+                  var input = document.getElementById('pwd');
+                  if (input.type === "password") {
+                    input.type = "text";
+                  } else {
+                    input.type = "password";
+                  }
+                }
+          </script>
+            <button type="submit" name="login">Accedi</button>
+        </form>
+    </body>
+
+</html>
