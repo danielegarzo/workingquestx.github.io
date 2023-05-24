@@ -8,11 +8,13 @@
     <body>
         <form method="post" action="/php/register.php">
             <h1>Registrazione</h1>
-            <input type="text" id="email" placeholder="email" name="email" maxlength="50" required>
+            <input type="email" id="email" placeholder="email" name="email" maxlength="50" required>
             <input type="text" id="username" placeholder="Username" name="username" maxlength="50" required>
             <input type="password" id="pwd" placeholder="Password" name="password" required>
             <input type="button" onclick="showPwd()" value="Mostra/nascondi password">
-
+        
+<input type="radio" name="sex" value="maschio"/> maschio
+<input type="radio" name="sex" value="femmina"/>Femmina
             <script>
                 function showPwd() {
                   var input = document.getElementById('pwd');

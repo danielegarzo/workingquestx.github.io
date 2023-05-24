@@ -30,6 +30,7 @@ if (isset($_POST['login'])) {
             $msg = 'Credenziali utente errate %s';
         } else {
             session_regenerate_id();
+            $_SESSION['loggato'] = true;
             $_SESSION['session_id'] = session_id();
             $_SESSION['session_user'] = $user['username'];
             
